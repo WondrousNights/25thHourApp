@@ -1,0 +1,36 @@
+ion-content.background{
+    --background: url(../../assets/images/25thHourHeader.png) 0 0/100% 100% no-repeat;
+  }
+ion-row.HeaderLogo
+{
+  margin-top:20%;
+  
+}
+ion-row.BtnRow
+{
+    margin-top: 25%;
+}
+ion-button.NavButton
+{
+  
+  margin-top:25%;
+  position: absolute;
+  padding:1px;
+  width:50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+.logo
+{
+  width:50%;
+  height: 50%;
+}
+.title
+{
+  font-size: 24px;
+  color:wheat;
+}
