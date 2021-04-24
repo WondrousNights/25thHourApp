@@ -1,27 +1,54 @@
 #container {
   text-align: center;
-
   position: absolute;
-  left: 0;
+  margin:0 auto;
+
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+
+.logo
+{
+  width:90%;
+  height: 90%;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+.title
+{
+  font-size: 50px;
+  color:wheat;
+}
+ion-button.LoginBtn
+{
   margin: 0;
+  margin-top:10%;
+  position: absolute;
+  width:50%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+ion-item.Input
+{
+  padding:5px;
 }
 
-#container a {
-  text-decoration: none;
+
+ion-row.InputRow
+{
+  margin-top:50%;
+
+}
+ion-row.HeaderLogo
+{
+  margin-top:35%;
+}
+ion-col.header
+{
+  margin-top: 25%;
+}
+ion-content.background{
+  --background: url(../../assets/images/25thHourHeader.png) 0 0/100% 100% no-repeat;
 }
