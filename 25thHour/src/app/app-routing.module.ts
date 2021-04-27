@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'home-directory',
     loadChildren: () => import('./home-directory/home-directory.module').then( m => m.HomeDirectoryPageModule)
   },
+  {
+    path: 'ambient-mixer',
+    loadChildren: () => import('./ambient-mixer/ambient-mixer.module').then( m => m.AmbientMixerPageModule)
+  },
 ];
 
 @NgModule({
