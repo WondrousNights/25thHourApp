@@ -16,4 +16,16 @@ export class HomeDirectoryPage implements OnInit {
   {
     this.route.navigate(['/ambient-mixer']);
   }
+  ToJournal()
+  {
+    this.route.navigate(['/info']);
+  }
+  ToMeditate()
+  {
+    this.route.navigate(['/journal']);
+  }
+  ToInfo()
+  {
+    this.route.navigate(['/meditate']);
+  }
 }

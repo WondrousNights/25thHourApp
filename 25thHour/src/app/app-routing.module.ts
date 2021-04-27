@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'ambient-mixer',
     loadChildren: () => import('./ambient-mixer/ambient-mixer.module').then( m => m.AmbientMixerPageModule)
   },
+  {
+    path: 'info',
+    loadChildren: () => import('./info/info.module').then( m => m.InfoPageModule)
+  },
+  {
+    path: 'meditate',
+    loadChildren: () => import('./meditate/meditate.module').then( m => m.MeditatePageModule)
+  },
+  {
+    path: 'journal',
+    loadChildren: () => import('./journal/journal.module').then( m => m.JournalPageModule)
+  },
 ];
 
 @NgModule({
