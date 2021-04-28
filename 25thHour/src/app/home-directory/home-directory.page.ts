@@ -18,14 +18,14 @@ export class HomeDirectoryPage implements OnInit {
   }
   ToJournal()
   {
-    this.route.navigate(['/info']);
+    this.route.navigate(['/journal']);
   }
   ToMeditate()
   {
-    this.route.navigate(['/journal']);
+    this.route.navigate(['/meditate']);
   }
   ToInfo()
   {
-    this.route.navigate(['/meditate']);
+    this.route.navigate(['/info']);
   }
 }
