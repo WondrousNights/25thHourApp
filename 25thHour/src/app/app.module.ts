@@ -7,6 +7,8 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { NativeAudio } from '@ionic-native/native-audio';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
