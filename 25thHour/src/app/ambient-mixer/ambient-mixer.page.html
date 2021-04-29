@@ -1,6 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Ambient Mixer</ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-align-self-start" size = 'sm'>
+        <ion-button class = "NavButton" color = "medium" (click) = "ToHome()">Back</ion-button>
+        </ion-col>
+        <ion-col>
+        <ion-title>Ambient Mixer</ion-title>           
+        </ion-col>      
+        <ion-col size = '2'>
+          <ion-img src = 'assets\icon\25thHourLogo.png'></ion-img>
+        </ion-col>  
+      </ion-row>
+
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
@@ -47,6 +60,10 @@
     <ion-range min = '0' max = '1' color = 'dark'></ion-range>
   </ion-item>
 
+  <br>
+  <h3 class = 'ion-text-center'>Preset Sounds</h3>
+  <br>
+
   <ion-card button (click)="buttonClick()" class = 'ion-text-center'>
     <ion-card-content>
       <ion-img src = 'assets\images\RainyAirport.jpg'></ion-img>
@@ -56,10 +73,6 @@
     </ion-card-header>
   </ion-card>
 
-  <br>
-  <h3>Preset Sounds</h3>
-  <br>
-  
   <ion-card button (click)="buttonClick()" class = 'ion-text-center'>
     <ion-card-content>
       <ion-img src = 'assets\images\CloudyCamping.jpg'></ion-img>
