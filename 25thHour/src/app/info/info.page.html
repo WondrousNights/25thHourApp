@@ -1,17 +1,35 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>info</ion-title>
+    <ion-title>home</ion-title>
+    <ion-button class="BackButton" color="light" (click)="ToHome()">Back</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 <ion-grid>
-  <ion-row>
-    <ion-column>
-      <div class="InfoContainer">
-        <p>Mental Health is .......</p>
-      </div>
-    </ion-column>
+  <ion-row class="InfoContainer">
+    <ion-col >
+      <h2 class= "BoxHeader">Depression</h2>
+        <p> about depression </p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="InfoContainer">
+    <ion-col >
+      <h2 class= "BoxHeader">Anxiety</h2>
+        <p> about anxiety </p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="InfoContainer">
+    <ion-col >
+      <h2 class= "BoxHeader">ADHA & ADD</h2>
+        <p> about adhd/add </p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="InfoContainer">
+    <ion-col >
+      <h2 class= "BoxHeader">Autism</h2>
+        <p> about autism </p>
+    </ion-col>
   </ion-row>
 </ion-grid>
 </ion-content>

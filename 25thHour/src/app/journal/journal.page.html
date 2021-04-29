@@ -1,9 +1,98 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>journal</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [scrollEvents]="true"
+(ionScrollStart)="logScrollStart()"
+(ionScroll)="logScrolling($event)"
+(ionScrollEnd)="logScrollEnd()">
+ <ion-header></ion-header>
 
-<ion-content>
+  <ion-list></ion-list>
 
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+      <div slot="fixed">
+        <ion-item>
+          
+          <div class="journal-content">
+          
+            <ion-grid>
+
+              <ion-row class="HeaderLogo">
+                <ion-col class="header">
+                  <div id="container">
+                    <img class="logo" src="../../assets/icon/25thHourLogo.png">
+                  </div>
+                  <div id="container">
+                    <h2 class="title" style="padding-top: 10px;">25th Hour Health</h2>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>4/28/2021</ion-card-subtitle>
+                  <ion-card-title>My notes</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+                <ion-icon name="arrow-forward-outline" style="float: right; padding-right: 10%; padding-bottom:5%;"></ion-icon>
+
+              </ion-card>
+
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>4/28/2021</ion-card-subtitle>
+                  <ion-card-title>My notes</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+                <ion-icon name="arrow-forward-outline" style="float: right; padding-right: 10%; padding-bottom:5%;"></ion-icon>
+
+              </ion-card>
+
+               <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>4/28/2021</ion-card-subtitle>
+                  <ion-card-title>My notes</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+                <ion-icon name="arrow-forward-outline" style="float: right; padding-right: 10%; padding-bottom:5%;"></ion-icon>
+
+              </ion-card>
+<ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>4/28/2021</ion-card-subtitle>
+                  <ion-card-title>My notes</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+                <ion-icon name="arrow-forward-outline" style="float: right; padding-right: 10%; padding-bottom:5%;"></ion-icon>
+
+              </ion-card>
+
+
+           
+
+          </div>
+        </ion-item>
+        
+       
+    
+        
+      </div>
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>
