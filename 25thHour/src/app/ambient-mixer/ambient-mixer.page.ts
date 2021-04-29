@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
-import { NativeAudio } from '@ionic-native/native-audio';
 
 
 export interface Track{
@@ -15,9 +15,14 @@ export interface Track{
 })
 export class AmbientMixerPage implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
+  }
+
+  ToHome()
+  {
+    this.route.navigate(['/home-directory']);
   }
 
   playlist: Track[] = [
