@@ -64,7 +64,7 @@
   <h3 class = 'ion-text-center'>Preset Sounds</h3>
   <br>
 
-  <ion-card button (click)="buttonClick()" class = 'ion-text-center'>
+  <ion-card (click)="start(6)" class = 'ion-text-center'>
     <ion-card-content>
       <ion-img src = 'assets\images\RainyAirport.jpg'></ion-img>
     </ion-card-content>
@@ -73,12 +73,21 @@
     </ion-card-header>
   </ion-card>
 
-  <ion-card button (click)="buttonClick()" class = 'ion-text-center'>
+  <ion-card (click)="start(7)" class = 'ion-text-center'>
     <ion-card-content>
       <ion-img src = 'assets\images\CloudyCamping.jpg'></ion-img>
     </ion-card-content>
     <ion-card-header>
       <ion-card-title>Summer Camping</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card (click)="start(8)" class = 'ion-text-center'>
+    <ion-card-content>
+      <ion-img src = 'assets\images\WorkDay.jpeg'></ion-img>
+    </ion-card-content>
+    <ion-card-header>
+      <ion-card-title>Work Day</ion-card-title>
     </ion-card-header>
   </ion-card>
 </ion-content>

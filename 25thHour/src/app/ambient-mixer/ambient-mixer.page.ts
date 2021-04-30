@@ -1,6 +1,7 @@
+import { hostViewClassName } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { Howl } from 'howler';
 
 
 export interface Track{
@@ -24,6 +25,7 @@ export class AmbientMixerPage implements OnInit {
   {
     this.route.navigate(['/home-directory']);
   }
+
 
   playlist: Track[] = [
     {
@@ -54,12 +56,37 @@ export class AmbientMixerPage implements OnInit {
     {
       name: 'Street',
       path: 'src\assets\ambient-tracks\Street.wav'
+    },
+    
+    {
+      name: 'RainyAirport',
+      path: 'src\assets\ambient-tracks\RainyAirport.mp3'
+    },
+    
+    {
+      name: 'SummerCamping',
+      path: 'src\assets\ambient-tracks\SummerCamping.mp3'
+    },
+    
+    {
+      name: 'WorkDay',
+      path: 'src\assets\ambient-tracks\WorkDay.mp3'
     }
 
   ];
 
-  start(track: Track){
+  
+  player: Howl = null;
 
+  start(track: number){
+    if (this.player) {
+      this.player.stop();
+    }
+    console.log([this.playlist[track].name]);
+    this.player = new Howl({
+      src: [this.playlist[track].path]
+    });
+    this.player.play();
   }
 
   stop(track: Track){
