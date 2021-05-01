@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-
+import { Router } from '@angular/router';
 const circleR= 80;
 const circleDasharray = 2 * Math.PI * circleR;
 @Component({
@@ -21,10 +21,14 @@ export class MeditatePage implements OnInit {
   ishidden = true;
   
 
-  constructor() {
-   
-    
-   }
+  constructor(private route: Router) { }
+
+  ToHome()
+  {
+    this.route.navigate(['/home-directory']);
+  }
+
+
 
   startDuration = 1;
   ngOnInit() {

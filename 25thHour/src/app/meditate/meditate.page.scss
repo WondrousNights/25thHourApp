@@ -1,3 +1,7 @@
+ion-content.background{
+  --ion-background-color: #34223a;
+}
+
 #navi,
 #i {
   width: 100%;
@@ -13,7 +17,7 @@
 
 .meditate_button
 {
-    background-color: #d012ed;
+    background-color: #ffc1ffcb;
     border: none;
     color: black;
     padding: 5px;
@@ -45,5 +49,5 @@ ion-column
     font-size:36px;
     text-anchor: middle;
     font-weight: 600;
-    fill: #333;
+    fill: rgb(213, 180, 226);
 }

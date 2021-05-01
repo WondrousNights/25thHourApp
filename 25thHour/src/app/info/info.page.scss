@@ -1,12 +1,16 @@
+ion-content.background{
+    --ion-background-color: #34223a;
+  }
+
 .InfoContainer
 {
-    border-color: #ffc1ff;
+    border-color: #ffc1ffcb;
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
     text-align: center;
    color:black;
-   background-color:rgb(253, 191, 253);
+   background-color:rgba(243, 191, 253, 0.842);
 margin: 5%;
 
 }

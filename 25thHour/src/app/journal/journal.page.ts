@@ -1,16 +1,24 @@
 import { Component, ViewChild, OnInit} from '@angular/core';
 import { IonInfiniteScroll } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-journal',
   templateUrl: './journal.page.html',
   styleUrls: ['./journal.page.scss'],
 })
-export class JournalPage {
+export class JournalPage implements OnInit {
 
   @ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
 
-  constructor() {}
+  constructor(private route: Router) { }
+
+  ngOnInit() {
+  }
+  ToHome()
+  {
+    this.route.navigate(['/home-directory']);
+  }
 
   loadData(event) {
     setTimeout(() => {
@@ -29,3 +37,6 @@ export class JournalPage {
   
 
 }
+
+
+ 
